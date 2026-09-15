@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Software Developer] — Open dag</title>
+<!-- ============================================================
+  TEMPLATE — OPEN DAG WEBSITE
+  Vervang alle tekst tussen [haakjes] door je eigen inhoud.
+  De opmaak staat in styles.css en hoeft niet aangepast te worden,
+  tenzij je kleuren/lettertypes wilt wijzigen (zie bovenin dat bestand).
+============================================================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site" id="siteHeader">
+  <div class="nav-row">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+          <rect x="1" y="1" width="9" height="9" rx="1.5" fill="var(--amber)"/>
+          <rect x="12" y="1" width="9" height="9" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <rect x="1" y="12" width="9" height="9" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <rect x="12" y="12" width="9" height="9" rx="1.5" fill="var(--teal)"/>
+        </svg>
+      </span>
+      <!-- Merknaam / school + afdeling -->
+      <span class="brand-word">Curio<span>.</span>Software Developer</span>
+    </a>
+
+    <nav class="primary-nav">
+      <!-- Pas labels aan als je secties toevoegt, hernoemt of verwijdert.
+           href moet overeenkomen met het id van de bijbehorende <section>. -->
+      <ul class="links" id="navLinks">
+        <li><a href="#vakken" data-nav>Vakken</a></li>
+        <li><a href="#rooster" data-nav>Rooster</a></li>
+        <li><a href="#blokken" data-nav>Blokken</a></li>
+        <li><a href="#beeld" data-nav>Beeld</a></li>
+        <li><a href="#toekomst" data-nav>Na je opleiding</a></li>
+        <li><a href="#planning" data-nav>Jaarplanning</a></li>
+        <li><a href="#praktisch" data-nav>Praktisch</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-right">
+      <a class="btn btn-nav-cta" href="#praktisch">Plan je bezoek</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="wrap hero-content">
+      <div>
+        <div class="eyebrow-row">
+          <span class="day-chip">Open dag</span>
+          <span style="color:var(--text-soft); font-size:.88rem;">Curio Software Developer</span>
+        </div>
+        <h1>Kom kijken hoe je software developer wordt</h1>
+        <p class="hero-sub">Kom kijken hoe je software developer wordt en ontdek wat ons programma te bieden heeft.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#vakken">Bekijk het lesprogramma</a>
+          <a class="btn btn-ghost" href="#praktisch">Praktische informatie</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <h3>In het kort</h3>
+        <dl>
+          <div class="fact-row"><dt>Niveau</dt><dd>4</dd></div>
+          <div class="fact-row"><dt>Duur</dt><dd>3 of 4 jaar</dd></div>
+          <div class="fact-row"><dt>Vakken jaar 1</dt><dd>10 vakken</dd></div>
+          <div class="fact-row"><dt>Versnellen</dt><dd>Mogelijk vanaf blok B</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 01 — VAKKEN ============
+       Kopieer een .subject-card om een vak toe te voegen.
+       Gebruik de klasse "generiek" voor Nederlands/Engels/rekenen e.d. -->
+  <section id="vakken">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="index">01 — [Sectienaam]</span>
+          <h2>[Titel, bv. "De vakken van je eerste jaar"]</h2>
+        </div>
+        <p>[Korte toelichting op deze sectie.]</p>
+      </div>
+
+      <div class="subject-grid">
+        <div class="subject-card">
+          <span class="subject-tag">[Categorie, bv. "Beroepsgericht"]</span>
+          <h4>[Vaknaam]</h4>
+          <p>[Korte beschrijving van dit vak in één of twee zinnen.]</p>
+        </div>
+        <div class="subject-card">
+          <span class="subject-tag">[Categorie]</span>
+          <h4>[Vaknaam]</h4>
+          <p>[Korte beschrijving.]</p>
+        </div>
+        <div class="subject-card">
+          <span class="subject-tag">[Categorie]</span>
+          <h4>[Vaknaam]</h4>
+          <p>[Korte beschrijving.]</p>
+        </div>
+        <div class="subject-card">
+          <span class="subject-tag">[Categorie]</span>
+          <h4>[Vaknaam]</h4>
+          <p>[Korte beschrijving.]</p>
+        </div>
+        <div class="subject-card">
+          <span class="subject-tag">[Categorie]</span>
+          <h4>[Vaknaam]</h4>
+          <p>[Korte beschrijving.]</p>
+        </div>
+        <div class="subject-card">
+          <span class="subject-tag">[Categorie]</span>
+          <h4>[Vaknaam]</h4>
+          <p>[Korte beschrijving.]</p>
+        </div>
+        <div class="subject-card generiek">
+          <span class="subject-tag">[Categorie, bv. "Generiek vak"]</span>
+          <h4>[Vaknaam, bv. "Nederlands"]</h4>
+          <p>[Korte beschrijving.]</p>
+        </div>
+        <div class="subject-card generiek">
+          <span class="subject-tag">[Categorie]</span>
+          <h4>[Vaknaam, bv. "Engels"]</h4>
+          <p>[Korte beschrijving.]</p>
+        </div>
+        <div class="subject-card generiek">
+          <span class="subject-tag">[Categorie]</span>
+          <h4>[Vaknaam, bv. "Rekenen"]</h4>
+          <p>[Korte beschrijving.]</p>
+        </div>
+        <div class="subject-card generiek">
+          <span class="subject-tag">[Categorie]</span>
+          <h4>[Vaknaam]</h4>
+          <p>[Korte beschrijving.]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 — ROOSTER ============
+       Kopieer een <tr> om een lesuur toe te voegen.
+       Kleurklassen voor de labels: b-vak / b-generiek / b-praktijk -->
+  <section class="alt" id="rooster">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="index">02 — [Sectienaam]</span>
+          <h2>[Titel, bv. "Zo ziet een lesweek eruit"]</h2>
+        </div>
+        <p>[Toelichting, bv. dat dit een voorbeeldrooster is.]</p>
+      </div>
+
+      <div class="table-scroll">
+        <table class="timetable">
+          <thead>
+            <tr>
+              <th>Tijd</th><th>Maandag</th><th>Dinsdag</th><th>Woensdag</th><th>Donderdag</th><th>Vrijdag</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="time">[Tijdblok, bv. "08:30–10:00"]</td>
+              <td><span class="block-tag b-vak">[Vak]</span></td>
+              <td><span class="block-tag b-generiek">[Vak]</span></td>
+              <td><span class="block-tag b-vak">[Vak]</span></td>
+              <td><span class="block-tag b-vak">[Vak]</span></td>
+              <td><span class="block-tag b-praktijk">[Vak/activiteit]</span></td>
+            </tr>
+            <tr>
+              <td class="time">[Tijdblok]</td>
+              <td><span class="block-tag b-vak">[Vak]</span></td>
+              <td><span class="block-tag b-generiek">[Vak]</span></td>
+              <td><span class="block-tag b-vak">[Vak]</span></td>
+              <td><span class="block-tag b-generiek">[Vak]</span></td>
+              <td><span class="block-tag b-praktijk">[Vak/activiteit]</span></td>
+            </tr>
+            <tr>
+              <td class="time">[Tijdblok]</td>
+              <td><span class="block-tag b-praktijk">[Vak/activiteit]</span></td>
+              <td><span class="block-tag b-vak">[Vak]</span></td>
+              <td><span class="block-tag b-generiek">[Vak]</span></td>
+              <td><span class="block-tag b-vak">[Vak]</span></td>
+              <td><span class="block-tag b-praktijk">[Vak/activiteit]</span></td>
+            </tr>
+            <tr>
+              <td class="time">[Tijdblok]</td>
+              <td><span class="block-tag b-praktijk">[Vak/activiteit]</span></td>
+              <td><span class="block-tag b-vak">[Vak]</span></td>
+              <td>[Bv. "Zelfstudie"]</td>
+              <td><span class="block-tag b-generiek">[Vak]</span></td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="disclaimer">[Eventuele toelichting onder de tabel, bv. wat de kleuren betekenen.]</p>
+    </div>
+  </section>
+
+  <!-- ============ 03 — BLOKKEN + VERSNELLEN ============
+       Kopieer een .block-item om een blok toe te voegen. -->
+  <section id="blokken">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="index">03 — [Sectienaam]</span>
+          <h2>[Titel, bv. "Indeling in blokken"]</h2>
+        </div>
+        <p>[Toelichting op de opbouw van het schooljaar.]</p>
+      </div>
+
+      <div class="block-strip">
+        <div class="block-item">
+          <span class="block-num">[Blok 1]</span>
+          <h4>[Titel van dit blok]</h4>
+          <p>[Korte beschrijving van wat er in dit blok gebeurt.]</p>
+        </div>
+        <div class="block-item">
+          <span class="block-num">[Blok 2]</span>
+          <h4>[Titel]</h4>
+          <p>[Beschrijving.]</p>
+        </div>
+        <div class="block-item">
+          <span class="block-num">[Blok 3]</span>
+          <h4>[Titel]</h4>
+          <p>[Beschrijving.]</p>
+        </div>
+        <div class="block-item">
+          <span class="block-num">[Blok 4]</span>
+          <h4>[Titel]</h4>
+          <p>[Beschrijving.]</p>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top:56px;">
+        <div>
+          <h3>[Titel, bv. "De mogelijkheid om te versnellen"]</h3>
+          <p>[Korte inleiding op de versnellingsmogelijkheid.]</p>
+          <ul class="info-list">
+            <li><span class="num">1</span><span>[Stap of voorwaarde.]</span></li>
+            <li><span class="num">2</span><span>[Stap of voorwaarde.]</span></li>
+            <li><span class="num">3</span><span>[Stap of voorwaarde.]</span></li>
+            <li><span class="num">4</span><span>[Stap of voorwaarde.]</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>[Titel, bv. "Huiswerk en zelfstudie"]</h3>
+          <p>[Korte inleiding op huiswerk/zelfstudie.]</p>
+          <ul class="info-list">
+            <li><span class="num">1</span><span>[Punt over huiswerk.]</span></li>
+            <li><span class="num">2</span><span>[Punt over huiswerk.]</span></li>
+            <li><span class="num">3</span><span>[Punt over huiswerk.]</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 — BEELDCARROUSEL ============
+       Kopieer een .slide om een dia toe te voegen.
+       Gebruik GEEN foto's van leerlingen/docenten of andere
+       persoonsgegevens — vervang de SVG door een eigen illustratie
+       of een neutrale, rechtenvrije afbeelding zonder herkenbare personen. -->
+  <section class="alt" id="beeld">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="index">04 — [Sectienaam]</span>
+          <h2>[Titel, bv. "Een kijkje in de opleiding"]</h2>
+        </div>
+        <p>[Toelichting op de carrousel.]</p>
+      </div>
+
+      <div class="carousel">
+        <div class="carousel-track" id="track">
+
+          <div class="slide">
+            <div class="slide-art">
+              <!-- Vervang dit SVG-icoon of plaats hier een <img src="..."> -->
+              <svg width="220" height="180" viewBox="0 0 220 180" fill="none">
+                <rect x="20" y="20" width="180" height="110" rx="4" stroke="#E8952F" stroke-width="3"/>
+                <rect x="34" y="34" width="152" height="82" fill="#1F6F6D" opacity=".25"/>
+              </svg>
+            </div>
+            <div class="slide-text">
+              <span class="subject-tag">[Label]</span>
+              <h4>[Titel van deze dia]</h4>
+              <p>[Korte beschrijving.]</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-art">
+              <svg width="220" height="180" viewBox="0 0 220 180" fill="none">
+                <circle cx="110" cy="90" r="50" stroke="#1F6F6D" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="slide-text">
+              <span class="subject-tag">[Label]</span>
+              <h4>[Titel van deze dia]</h4>
+              <p>[Korte beschrijving.]</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-art">
+              <svg width="220" height="180" viewBox="0 0 220 180" fill="none">
+                <rect x="60" y="40" width="100" height="100" rx="4" stroke="#E8952F" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="slide-text">
+              <span class="subject-tag">[Label]</span>
+              <h4>[Titel van deze dia]</h4>
+              <p>[Korte beschrijving.]</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-art">
+              <svg width="220" height="180" viewBox="0 0 220 180" fill="none">
+                <polygon points="110,30 180,150 40,150" stroke="#1F6F6D" stroke-width="3" fill="none"/>
+              </svg>
+            </div>
+            <div class="slide-text">
+              <span class="subject-tag">[Label]</span>
+              <h4>[Titel van deze dia]</h4>
+              <p>[Korte beschrijving.]</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="carousel-controls">
+          <div class="carousel-dots" id="dots"></div>
+          <div class="arrow-group">
+            <button class="arrow-btn" id="prevBtn" aria-label="Vorige afbeelding">←</button>
+            <button class="arrow-btn" id="nextBtn" aria-label="Volgende afbeelding">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 — NA JE OPLEIDING ============ -->
+  <section id="toekomst">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="index">05 — [Sectienaam]</span>
+          <h2>[Titel, bv. "Wat kun je hierna gaan doen"]</h2>
+        </div>
+        <p>[Korte toelichting.]</p>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h3>[Titel, bv. "Direct aan het werk"]</h3>
+          <ul class="info-list">
+            <li><span class="num">→</span><span>[Beroep of functie]</span></li>
+            <li><span class="num">→</span><span>[Beroep of functie]</span></li>
+            <li><span class="num">→</span><span>[Beroep of functie]</span></li>
+            <li><span class="num">→</span><span>[Beroep of functie]</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>[Titel, bv. "Doorstuderen"]</h3>
+          <ul class="info-list">
+            <li><span class="num">→</span><span>[Vervolgopleiding]</span></li>
+            <li><span class="num">→</span><span>[Vervolgopleiding]</span></li>
+            <li><span class="num">→</span><span>[Vervolgopleiding]</span></li>
+            <li><span class="num">→</span><span>[Vervolgopleiding]</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 — SFEER, GROEPSWERK & QUOTE ============
+       Gebruik voor het citaat GEEN echte naam — hou het anoniem,
+       bv. "tweedejaars leerling [opleiding]". -->
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="index">06 — [Sectienaam]</span>
+          <h2>[Titel, bv. "Sfeer en samenwerken"]</h2>
+        </div>
+        <p>[Korte toelichting.]</p>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h3>[Titel, bv. "Sfeer op de afdeling"]</h3>
+          <p>[Beschrijving van de sfeer — zonder namen of foto's van personen.]</p>
+          <p>[Eventueel een tweede alinea.]</p>
+        </div>
+        <div>
+          <h3>[Titel, bv. "Werken in groepen"]</h3>
+          <p>[Beschrijving van hoe er in groepen gewerkt wordt.]</p>
+          <p>[Eventueel een tweede alinea.]</p>
+        </div>
+      </div>
+
+      <div style="margin-top:56px;" class="quote-panel">
+        <blockquote>&ldquo;[Anoniem citaat van een leerling over de opleiding.]&rdquo;</blockquote>
+        <cite>— [functie/rol, geen naam, bv. "tweedejaars leerling"]</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 — ZAK-/SLAAGREGELING ============ -->
+  <section id="regeling">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="index">07 — [Sectienaam]</span>
+          <h2>[Titel, bv. "Zak-/slaagregeling generieke vakken"]</h2>
+        </div>
+        <p>[Korte toelichting.]</p>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-cell">
+          <span class="num">[Afkorting]</span>
+          <span class="label">[Regel voor dit vak.]</span>
+        </div>
+        <div class="stat-cell">
+          <span class="num">[Afkorting]</span>
+          <span class="label">[Regel voor dit vak.]</span>
+        </div>
+        <div class="stat-cell">
+          <span class="num">[Afkorting]</span>
+          <span class="label">[Regel voor dit vak.]</span>
+        </div>
+        <div class="stat-cell">
+          <span class="num">[Afkorting]</span>
+          <span class="label">[Regel voor dit vak.]</span>
+        </div>
+      </div>
+      <p class="disclaimer">[Voorbehoud, bv. dat de regeling per jaar kan wijzigen.]</p>
+    </div>
+  </section>
+
+  <!-- ============ 08 — EIGEN ONDERWERP ============
+       Vrij invulbare sectie — vervang titel en inhoud naar wens
+       (bv. stage, aanmelden, apparatuur, digitale leeromgeving). -->
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="index">08 — [Sectienaam]</span>
+          <h2>[Titel van je eigen onderwerp]</h2>
+        </div>
+        <p>[Korte toelichting.]</p>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3>[Subtitel]</h3>
+          <ul class="info-list">
+            <li><span class="num">1</span><span>[Punt.]</span></li>
+            <li><span class="num">2</span><span>[Punt.]</span></li>
+            <li><span class="num">3</span><span>[Punt.]</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>[Subtitel]</h3>
+          <p>[Vrije tekst.]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 09 — JAARPLANNING + VAKANTIES ============
+       Kopieer een .year-item of een <tr> om regels toe te voegen. -->
+  <section id="planning">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="index">09 — [Schooljaar, bv. "2026–2027"]</span>
+          <h2>[Titel, bv. "Jaarplanning en vakanties"]</h2>
+        </div>
+        <p>[Korte toelichting.]</p>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h3>[Titel, bv. "Jaarplanning"]</h3>
+          <div class="year-timeline">
+            <div class="year-item">
+              <span class="period">[Periode]</span>
+              <h4>[Titel]</h4>
+              <p>[Beschrijving.]</p>
+            </div>
+            <div class="year-item">
+              <span class="period">[Periode]</span>
+              <h4>[Titel]</h4>
+              <p>[Beschrijving.]</p>
+            </div>
+            <div class="year-item">
+              <span class="period">[Periode]</span>
+              <h4>[Titel]</h4>
+              <p>[Beschrijving.]</p>
+            </div>
+            <div class="year-item">
+              <span class="period">[Periode]</span>
+              <h4>[Titel]</h4>
+              <p>[Beschrijving.]</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3>[Titel, bv. "Vakanties schooljaar [jaartal]"]</h3>
+          <table class="vac-table">
+            <thead>
+              <tr><th>Vakantie</th><th>Periode</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>[Naam vakantie]</td><td>[Datum – datum]</td></tr>
+              <tr><td>[Naam vakantie]</td><td>[Datum – datum]</td></tr>
+              <tr><td>[Naam vakantie]</td><td>[Datum – datum]</td></tr>
+              <tr><td>[Naam vakantie]</td><td>[Datum – datum]</td></tr>
+              <tr><td>[Naam vakantie]</td><td>[Datum – datum]</td></tr>
+            </tbody>
+          </table>
+          <p class="disclaimer">[Eventueel voorbehoud over de datums.]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10 — PRAKTISCH ============ -->
+  <section class="alt" id="praktisch">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="index">10 — [Sectienaam]</span>
+          <h2>[Titel, bv. "Voorbereiden op je bezoek"]</h2>
+        </div>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3>[Titel, bv. "Wat kun je verwachten"]</h3>
+          <ul class="info-list">
+            <li><span class="num">•</span><span>[Punt.]</span></li>
+            <li><span class="num">•</span><span>[Punt.]</span></li>
+            <li><span class="num">•</span><span>[Punt.]</span></li>
+            <li><span class="num">•</span><span>[Punt.]</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>[Titel, bv. "Vragen voorbereiden"]</h3>
+          <p>[Vrije tekst.]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <h4>[School — opleidingsnaam]</h4>
+      <p style="color:#8993A6; font-size:.9rem; max-width:40ch;">[Korte afsluitende tekst over deze pagina.]</p>
+    </div>
+    <div>
+      <h4>Snel naar</h4>
+      <ul class="foot-list">
+        <li><a href="#vakken">Vakken</a></li>
+        <li><a href="#rooster">Rooster</a></li>
+        <li><a href="#planning">Jaarplanning</a></li>
+        <li><a href="#regeling">Examinering</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>[Titel, bv. "Open dag"]</h4>
+      <ul class="foot-list">
+        <li>[Locatie]</li>
+        <li>[Tijden]</li>
+        <li>[Aanmelden wel/niet verplicht]</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© [School], opleiding [naam]</span>
+    <span>[Privacyzin, bv. "Deze site bevat geen persoonsgegevens of beeldmateriaal van leerlingen of docenten."]</span>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', isOpen);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Header shadow on scroll
+  const siteHeader = document.getElementById('siteHeader');
+  const onScroll = () => siteHeader.classList.toggle('scrolled', window.scrollY > 8);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Scrollspy: highlight the nav link for the section in view
+  const navAnchors = Array.from(document.querySelectorAll('[data-nav]'));
+  const navTargets = navAnchors
+    .map(a => document.querySelector(a.getAttribute('href')))
+    .filter(Boolean);
+
+  if ('IntersectionObserver' in window && navTargets.length) {
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const id = '#' + entry.target.id;
+        const link = navAnchors.find(a => a.getAttribute('href') === id);
+        if (!link) return;
+        if (entry.isIntersecting) {
+          navAnchors.forEach(a => a.classList.remove('current'));
+          link.classList.add('current');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+    navTargets.forEach(t => spy.observe(t));
+  }
+
+  // Carousel
+  const track = document.getElementById('track');
+  const slides = Array.from(track.children);
+  const dotsWrap = document.getElementById('dots');
+  let index = 0;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Ga naar afbeelding ' + (i + 1));
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(dot);
+  });
+  const dots = Array.from(dotsWrap.children);
+
+  function goTo(i){
+    index = (i + slides.length) % slides.length;
+    track.style.transform = 'translateX(-' + (index * 100) + '%)';
+    dots.forEach((d, di) => d.classList.toggle('active', di === index));
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', () => goTo(index - 1));
+  document.getElementById('nextBtn').addEventListener('click', () => goTo(index + 1));
+
+  let autoplay = setInterval(() => goTo(index + 1), 6000);
+  const carouselEl = document.querySelector('.carousel');
+  carouselEl.addEventListener('mouseenter', () => clearInterval(autoplay));
+  carouselEl.addEventListener('mouseleave', () => { autoplay = setInterval(() => goTo(index + 1), 6000); });
+
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReduced) clearInterval(autoplay);
+</script>
+
+</body>
+</html>
